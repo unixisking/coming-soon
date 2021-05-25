@@ -1,10 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Preloader from "./components/Preloader/Preloader";
-import Timer from "./components/Countdown/Timer";
-import Optin from "./components/Optin/Optin";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Preloader from './components/Preloader/Preloader';
+import Timer from './components/Countdown/Timer';
 
-import "./styles.css";
+import './styles.css';
 
 function App() {
   return (
@@ -16,12 +15,11 @@ function App() {
           Coming Soon
         </h1>
         <Timer />
-        <Optin />
         <Preloader />
       </div>
     </div>
   );
 }
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
